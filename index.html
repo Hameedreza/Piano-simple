@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Piano</title>
+</head>
+<body>
+  <div class="piano">
+    <div class="piano__body">
+      <div class="piano__speaker"></div>
+      <div class="piano__interface">
+        <div class="piano__controls">
+          <h4 class="piano__heading">Piano</h4>
+          <label><input type="radio" class="piano__control__option" name="control" value="LetterNotes" checked>LetterNotes</label>
+          <label><input type="radio" class="piano__control__option" name="control" value="Keyboard">Keyboard</label>
+          <label><input type="radio" class="piano__control__option" name="control" value="none">None</label>
+        </div>
+        <div class="piano__autoplay">
+          <h4 class="piano__heading">Autoplay</h4>
+          <select class="piano__song-list">
+            <option value="1">Jingle Bells</option>
+            <option value="2" selected>Happy Birthday</option>
+          </select>
+          <label> Tempo: 
+            <select class="piano__tempo">
+              <option value="1">slow</option>
+              <option value="2">normal</option>
+              <option value="3">fast</option>
+            </select>
+          </label>
+          <button class="piano__play-btn">play</button>
+        </div>
+      </div>
+      <div class="piano__speaker"></div>
+    </div>
+    <div class="piano__keyboard">
+      <!-- <button class="piano__key piano__key--white">C1</button>
+      <div class="empty-space">
+        <button class="piano__key piano__key--black">C#1</button>
+      </div>
+      <button class="piano__key piano__key--white">D1</button>
+      <div class="empty-space">
+        <button class="piano__key piano__key--black">D#1</button>
+      </div>
+      <button class="piano__key piano__key--white">E</button>
+      <button class="piano__key piano__key--white">F</button> -->
+    </div>
+  </div>
+
+  <script src="js/index.js" defer></script>
+</body>
+</html>
