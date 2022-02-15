@@ -17,6 +17,10 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .piano__body{
@@ -52,8 +56,22 @@ body{
 }
 
 .piano__play-btn , select{
-  font-size: 20px;
+  font-size: 18px;
 }
+
+select{
+  border-radius: 10px;
+  padding: 8px;
+}
+.piano__play-btn{
+  border-radius: 10px;
+  padding:10px 25px;
+}
+
+.tempo{
+  font-size: 18px;
+}
+
 
 .piano__keyboard{
   width: 100%;
@@ -74,13 +92,6 @@ body{
   border-radius: 0 0 8px 8px;
 }
 
-.piano__key--playing{
-  background-color: #79b9ff;
-}
-/* .piano__key:active{
-  outline: solid thick #666;
-} */
-
 .piano__key--black{
   height: 60%;
   background-color: #000;
@@ -88,8 +99,17 @@ body{
   position: absolute;
   left: -15px;
   top: 0;
-  
 }
+
+.piano__key--playing{
+  background-color: #79b9ff;
+}
+/* .piano__key:active{
+  outline: solid thick #666;
+} */
+
+
+
 
 .empty-space{
   position: relative;
